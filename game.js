@@ -15,6 +15,7 @@ function nextSequence() {
     level++;
     userPattern = [];
     $("h1").text(`Level ${level}`);
+    $("p").text("");
     var randomNumber = Math.floor(Math.random()*4);
     var randomColour = buttonColours[randomNumber];
     gamePattern.push(randomColour);
@@ -53,7 +54,8 @@ function checkAnswer(currentLevel) {
             },500);
         }
     } else {
-        $("h1").text("Game Over, Press Any Key to Continue");
+        $("h1").text("Game Over");
+        $("p").text("Press Any Key to Continue");
         makeSound("wrong");
         $("body").addClass("game-over");
         setTimeout(function(){
