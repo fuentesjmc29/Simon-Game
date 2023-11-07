@@ -4,7 +4,7 @@ var userPattern = [];
 var level = 0;
 var started = false;
 
-$(document).keydown(function(){
+$("img").click(function(){
     if (!started){
         started = true;
         nextSequence();
@@ -55,7 +55,7 @@ function checkAnswer(currentLevel) {
         }
     } else {
         $("h1").text("Game Over");
-        $("p").text("Press Any Key to Continue");
+        $("p").text("Press Psyduck to Continue");
         makeSound("wrong");
         $("body").addClass("game-over");
         setTimeout(function(){
