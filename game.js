@@ -55,7 +55,7 @@ function checkAnswer(currentLevel) {
         }
     } else {
         $("h1").text("Game Over");
-        $("p").text("Press Psyduck to Continue");
+        $("p").text("Press Psyduck to Restart");
         makeSound("wrong");
         $("body").addClass("game-over");
         setTimeout(function(){
