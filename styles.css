@@ -2,12 +2,26 @@ h1, p {
     font-family: "Press Start 2P";
     font-size: 3rem;
     color: rgb(247, 247, 185);
-    margin: 50px;
+    margin: 20px;
 }
 
 body {
     text-align: center;
     background-color: rgb(0, 0, 82);
+}
+
+img {
+    width: 100px;
+    border-radius: 30%;
+}
+
+img:hover {
+    opacity: 0.9;
+}
+
+img:active {
+    box-shadow: 0 0 20px 0 black;
+    box-shadow: 0 0 10px 10px white;
 }
 
 .container {
@@ -56,6 +70,16 @@ body {
     h1, p {
         font-size: 1.5rem;
         line-height: 1.5;
+        margin: 30px;
+    }
+
+    h1 {
+        margin-top: 70px;
+    }
+
+    img {
+        width: 70px;
+        margin-bottom: 20px;
     }
 
     .container {
