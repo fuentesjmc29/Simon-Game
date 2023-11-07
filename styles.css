@@ -68,7 +68,7 @@ img:active {
 
 @media (max-width: 430px) {
     h1, p {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         line-height: 1.5;
         margin: 30px;
     }
